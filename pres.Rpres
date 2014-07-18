@@ -1,0 +1,48 @@
+Presentation
+========================================================
+left:50%
+author: mingchen
+date: 2014.07.18
+transition: rotate
+font-family:'Helvetica'
+autosize:true
+Introduction
+========================================================
+
+In the jeferryApp, I developed an application to help you 
+explorer the dataset.And more detail information, you can 
+check the **README.md** in github show below. 
+https://github.com/MingchenInSZ/jefferyApp.git
+
+- Select dataset
+- Choose variable to show
+- Results
+
+Example
+========================================================
+```{r,fig.height=200,fig.width=500}
+  #runApp()
+```
+This is the initial view of the jefferyApp
+![alt,text](pres-figure/dataview.png)
+
+
+
+Example(cont'd)
+========================================================
+This is the summary page:
+```{r}
+summary(iris)
+```
+Example(cont'd)
+========================================================
+In plot view, it provides a sharp contrast two variabls
+in groups.
+```{r,echo=FALSE}
+#library(ggplot2)
+#qplot(x=iris$Sepal.Length,y=Sepal.Width,
+# color=iris$Species,xlab="Sepal.Length",
+# ylab="Sepal.Width",main="Differences in groups")
+
+```
+![alt,text](pres-figure/download.png)
